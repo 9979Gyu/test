@@ -43,13 +43,14 @@
         <div id="navbar-placeholder"></div>
 
         <!-- maybe can do caraseol -->
-        <section id="welcome-hero" class="welcome-hero">
+        <section id="welcome-sub" class="welcome-sub">
             <div class="image-background">
-                <img src="assets/images/background/graduate 2.png" alt="Graduation Image">
+                <img src="assets/images/background/graduate 2-edited.png" alt="Graduation Image">
             </div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
+						<br/>
 						<div class="header-text">
 							<h2>My Education Background</h2>
 							<p>A brief overview of my academic journey</p>
@@ -61,10 +62,10 @@
 		</section>
 
         <!-- education section -->
-        <section id="education" class="education">
-			<!-- <div class="section-heading text-center">
+        <section id="education" class="section-header">
+			<div class="section-heading text-center">
 				<h2>education</h2>
-			</div> -->
+			</div>
 			<div class="container">
 				<div class="education-horizontal-timeline">
 					<div class="row">
@@ -85,10 +86,13 @@
 										</h4>
 										<h5>melaka, malaysia</h5>
 										<p class="description">
-											Focused on software development, algorithms, and artificial intelligence. Participated in code battles and student projects to enhance coding and problem-solving skills.
-                                            <br/>
-                                            <br/>
-                                            <span>FYP: UNITYCARE</strong> (application to empower community employment and skill)</span>
+											Focused on software development, algorithms, and artificial intelligence. 
+											Participated in code battles and student projects to enhance coding and 
+											problem-solving skills.
+										</p>
+										<br/>
+                                        <p class="description">
+											<span>FYP: UNITYCARE</strong> (application to empower community employment and skill)</span>
                                             <ul>
                                                 <li>Job Posting Apps</li>
                                                 <li>Focus on Individuals with Disabilities</li>
@@ -116,21 +120,152 @@
 										</h4>
 										<h5>melaka, malaysia</h5>
 										<p class="description">
-											<span>Focused on software development, algorithms, and machine learning. Built multiple projects, including an e-commerce site and a personal portfolio.</span>
-                                            <br/>
-                                            <br/>
-                                            <span>FYP: School Fees Management System</span>
+											Focused on software development, algorithms, and machine learning. 
+											Built multiple projects, including an e-commerce site and a personal portfolio.
+										</p>
+										<br/>
+										<p class="description">
+											<span>FYP: School Fees Management System</span>
                                             <ul>
                                                 <li>Primary and Secondary School</li>
                                                 <li>Increase the efficiency and reduce complexity for teachers in collecting fees</li>
                                             </ul>
-                                        </p>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+
+		</section>
+
+		<section class="section-header even-background">
+			<div class="section-heading text-center">
+				<h2>achievements</h2>
+			</div>
+			<div class="container">
+				<div class="profiles-content">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="single-profile" data-toggle="modal" data-target="#acemodal">
+								<div class="profile-txt">
+									<a><i class="fa-solid fa-cloud"></i></a>
+									<div class="profile-icon-name">Associate Cloud Engineer Certificate</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a><i class="fa-solid fa-cloud"></i></a>
+										<div class="profile-icon-name">Associate Cloud Engineer Certificate</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="single-profile" data-toggle="modal" data-target="#coursemodal">
+								<div class="profile-txt">
+									<a><i class="fa-brands fa-google"></i></a>
+									<div class="profile-icon-name">Google Cloud Career Readiness Program</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a><i class="fa-brands fa-google"></i></a>
+										<div class="profile-icon-name">Google Cloud Career Readiness Program</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="single-profile profile-no-border" data-toggle="modal" data-target="#deanmodal">
+								<div class="profile-txt">
+									<a><i class="fa-solid fa-award"></i></a>
+									<div class="profile-icon-name">Dean's List Award</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a><i class="fa-solid fa-award"></i></a>
+										<div class="profile-icon-name">Dean's List Award</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="acemodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="acemodalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						  <h4 class="modal-title" id="acemodalLabel">Achievement Details</h4>
+						</div>
+						<div class="modal-body">
+							<p>
+								Google Cloud Associate Cloud Engineer (ACE) Exam is an entry-level 
+								certification that validates your ability to deploy, manage, and secure 
+								applications on Google Cloud Platform (GCP).
+							</p>
+							<br/>
+							<div class="modal-flex">
+								<a href="https://www.credly.com/badges/b7b8bd34-e9e8-40ac-b49f-8e1ed0271901/linked_in_profile" target="_blank">
+									<img src="assets/images/education/ace-cert.jpg" alt="exam certificate"/>
+								</a>
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+
+				<div id="coursemodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="coursemodalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						  <h4 class="modal-title" id="coursemodalLabel">Achievement Details</h4>
+						</div>
+						<div class="modal-body">
+							<p>
+								Successfully completing Google Cloud Career Readiness program in 2023.
+							</p>
+							<br/>
+							<div class="modal-flex">
+								<img src="assets/images/education/ace-cert2.jpg" alt="path completion certificate"/>
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+
+				<div id="deanmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deanmodalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						  <h4 class="modal-title" id="deanmodalLabel">Achievement Details</h4>
+						</div>
+						<div class="modal-body">
+							<p>
+								Awarded The Dean's list for excellent academic achievement.
+							</p>
+							<br/>
+							<div class="modal-flex">
+								<img src="assets/images/education/dean.png" alt="Dean's List certificate"/>
+							</div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+
 			</div>
 
 		</section>
