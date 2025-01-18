@@ -38,6 +38,7 @@
     <body>
         <div id="navbar-placeholder"></div>
 
+		<!-- header -->
         <section id="welcome-hero" class="welcome-hero">
             <div class="video-background">
                 <video autoplay loop muted>
@@ -70,7 +71,7 @@
 						<div class="col-sm-6">
 							<div class="single-about-txt">
 								<h3>
-									I am an Experienced Software Developer.
+									I am a Software Developer.
 								</h3>
 								<p>
 									I am currently pursuing a degree in Computer Science with a major in Software Development. 
@@ -144,7 +145,7 @@
 				<div class="container">
 					<div class="profiles-content">
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-sm-4">
 								<div class="single-profile">
 									<div class="profile-txt">
 										<a href="https://github.com/9979Gyu" target="_blank">
@@ -162,8 +163,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="single-profile profile-no-border">
+							<div class="col-sm-4">
+								<div class="single-profile">
 									<div class="profile-txt">
 										<a href="https://www.youtube.com/@yuqingui7524" target="_blank">
 											<i class="fa-brands fa-youtube" aria-hidden="true"></i>
@@ -180,6 +181,24 @@
 									</div>
 								</div>
 							</div>
+							<div class="col-sm-4">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<a href="https://www.tiktok.com/@yuqin280" target="_blank">
+											<i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+										</a>
+										<div class="profile-icon-name">tiktok</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href="https://www.tiktok.com/@yuqin280" target="_blank">
+												<i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+											</a>
+											<div class="profile-icon-name">tiktok</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -187,10 +206,86 @@
 
 		</section>
 
+		<!-- interest section -->
+		<section id="interests" class="section-header section-top-border">
+			<div class="section-heading text-center">
+				<h2>interests</h2>
+			</div>
+			<div class="interests-area">
+				<div class="container-fluid">
+					<!-- Carousel container -->
+					<div id="my-pics" class="carousel slide" data-ride="carousel">
+					
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#my-pics" data-slide-to="0" class="active"></li>
+							<li data-target="#my-pics" data-slide-to="1"></li>
+							<li data-target="#my-pics" data-slide-to="2"></li>
+							<li data-target="#my-pics" data-slide-to="3"></li>
+							<li data-target="#my-pics" data-slide-to="4"></li>
+						</ol>
+						
+						<!-- Content -->
+						<div class="carousel-inner" role="listbox">
+						
+							<!-- Slide 1 -->
+							<div class="item active">
+								<img src="assets/images/interest/art of war.png" alt="Art of War">
+								<div class="carousel-caption">
+									<span><strong>A Book named The Art of War</strong></span>
+								</div>
+							</div>
+							
+							<!-- Slide 2 -->
+							<div class="item">
+								<img src="assets/images/interest/travel.jpg" alt="Travelling">
+								<div class="carousel-caption">
+									<span><strong>Travelling</strong></span>
+								</div>
+							</div>
+							
+							<!-- Slide 3 -->
+							<div class="item">
+								<img src="assets/images/interest/dynasty warrior.jpg" alt="Dynasty Warrior Video Game">
+								<div class="carousel-caption">
+									<span><strong>Dynasty Warrior Video Games</strong></span>
+								</div>
+							</div>
+	
+							<!-- Slide 4 -->
+							<div class="item">
+								<img src="assets/images/interest/one-piece.jpg" alt="OnePiece">
+								<div class="carousel-caption">
+									<span><strong>Movie</strong></span>
+								</div>
+							</div>
+	
+							<!-- Slide 5 -->
+							<div class="item">
+								<img src="assets/images/interest/music.png" alt="Music">
+								<div class="carousel-caption">
+									<span><strong>Music</strong></span>
+								</div>
+							</div>
+						</div>	
+						<!-- Previous/Next controls -->
+						<a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+							<span class="icon-prev" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+							<span class="icon-next" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
         <!-- contact section -->
         <section id="contact" class="section-header even-background">
 			<div class="section-heading text-center">
-				<h2>contact me</h2>
+				<h2>reach me</h2>
 			</div>
 			<div class="container">
 				<div class="contact-content">
@@ -198,41 +293,9 @@
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div>
-											</div>
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
-												</div>
-											</div>
-										</div>
-									</form>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63785.042576386026!2d102.27991628763436!3d2.3138928814633304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1e46a143881ad%3A0x8c8068611b844a80!2sFakulti%20Teknologi%20Maklumat%20dan%20Komunikasi%20(FTMK)%2C%20UTeM!5e0!3m2!1sen!2smy!4v1737200493008!5m2!1sen!2smy" 
+									width="500" height="450" allowfullscreen="" loading="lazy" 
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 							</div>
 						</div>
@@ -312,6 +375,7 @@
 		<script src="assets/js/jquery.appear.js"></script>
 
 		<!-- for progress bar end -->
+
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		

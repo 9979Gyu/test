@@ -12,6 +12,7 @@
 }
 
 .even-background {
+    z-index: 0;
     background: #f9fbfd;
 }
 
@@ -184,7 +185,9 @@ nav.navbar.bootsnav .navbar-toggle i{
     color: #2c7ef9;
 }
 
-/* welcome-hero */
+/*-------------------------------------
+        Welcome-Hero
+--------------------------------------*/
 .welcome-hero{
     display: flex;
     align-items: center;
@@ -225,8 +228,18 @@ nav.navbar.bootsnav .navbar-toggle i{
     z-index: 0;
 }
 
-/* welcome sub */
+/*-------------------------------------
+        Welcome-Sub
+--------------------------------------*/
 .welcome-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 550px;
+}
+
+.welcome-sub-no-overlay{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,7 +289,6 @@ nav.navbar.bootsnav .navbar-toggle i{
     z-index: 0;
 }
 
-/*.header-text-area*/
 .header-text h2 {
     color: #fff;
     font-size: 54px;
@@ -327,8 +339,9 @@ nav.navbar.bootsnav .navbar-toggle i{
     border-top: 1px solid #e5ebf2;
 }
 
-/* about */
-
+/*-------------------------------------
+        About
+--------------------------------------*/
 .about-content {
     padding-top: 100px;
 }
@@ -421,7 +434,16 @@ nav.navbar.bootsnav .navbar-toggle i{
     margin-left: 6px;
 }
 
-/* education */
+/*-------------------------------------
+        Education
+--------------------------------------*/
+.edu-image img {
+    padding-top: 10%;
+    width: auto; /* Ensures the image scales to fit the container width */
+    height: 300px; /* Keeps the aspect ratio of the image intact */
+    display: block; /* Removes any unwanted space below the image */
+}
+
 .education-horizontal-timeline {
     padding: 80px 0;
 }
@@ -464,15 +486,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     width: 88px;
 }
 
-
-/* profile */
-
+/*-------------------------------------
+        Profile
+--------------------------------------*/
 .profiles-content {
     padding-top: 100px;
 }
 
-.profiles-content .col-sm-3{
-    padding:0;
+.profiles-content .col-sm-4{
+    padding: 0;
 }
 
 .profile-txt {
@@ -555,56 +577,29 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     border:transparent;
 }
 
-/* contact */
-.single-contact-box {padding-top: 100px;}
-.contact-form  .form-group {
-    margin-bottom: 20px;
-    
-}
-.contact-form .form-control {
-    padding: 25px;
-    font-size: 14px;
-    border: 1px solid #fff;
-    border-radius: 0px;
-    box-shadow: none;
-    outline: 0!important;
-    background: #fff;
-    color: #636a82;
-    resize: none;
+/*-------------------------------------
+        Contact
+--------------------------------------*/
+.single-contact-box {
+    padding-top: 100px;
 }
 
-.contact-form .single-contact-btn {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:50px;
-    text-transform:capitalize;
-    margin-top: 3px;
-    background: #3676ff;
-    border: 1px solid #3676ff;
-    cursor:pointer;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-     -webkit-transition: .5s; 
-    -moz-transition:.5s; 
-    -ms-transition:.5s; 
-    -o-transition:.5s;
-    transition: .5s;
+.contact-form {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; /* This maintains the 16:9 aspect ratio (height / width = 9 / 16 = 0.5625) */
 }
-.contact-form .single-contact-btn .contact-btn ,
-.contact-form .single-contact-btn .contact-btn:focus {
-    margin-top:0px;
-    outline: 0 !important;
-    border:0;
-    color: #fff;
-    border-radius: 0px;
-    font-size:14px;
-    -webkit-transition: .5s; 
-    -moz-transition:.5s; 
-    -ms-transition:.5s; 
-    -o-transition:.5s;
-    transition: .5s;
-    
+
+.contact-form iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
+
 .single-contact-btn:hover{
     background: #0051ff;
     border: 1px solid #0051ff;
@@ -664,7 +659,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     color: #888ea5;
 }
 
-/* skills */
+/*-------------------------------------
+        Skill
+--------------------------------------*/
 .skill-content{
     padding: 50px 0 80px;
 }
@@ -732,11 +729,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {
    margin-left: 0;
 }
 
-/* experience */
+/*-------------------------------------
+        Experience
+--------------------------------------*/
 .experience-content {padding-top: 100px;}
 .single-timeline-box {margin-bottom: 75px;}
 
-/*experience-time*/
 .experience-time {
     position: relative;
 }
@@ -750,7 +748,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     margin-top: 14px;
     text-transform: uppercase;
 }
-/*experience-time*/
+
 .main-timeline{
     position: relative;
 }
@@ -786,6 +784,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     font-weight: 300;
     margin: 18px 0 20px;
 }
+
 .main-timeline .description {
     font-size: 14px;
     color: #999fb3;
@@ -806,8 +805,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .experience-time-responsive{display: none;}
 
-/* portfolio */
-
+/*-------------------------------------
+        Portfolio
+--------------------------------------*/
 .portfolio-content {padding-top: 100px;}
 
 /* ---- .item ---- */
@@ -876,7 +876,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     top:0;
 }
 
-/* activities */
+/*-------------------------------------
+        Activities
+--------------------------------------*/
+#activities .nav{
+    background-color: #f9fbfd;
+}
 .activity {
     text-align: center;
     margin: 20px;
@@ -890,15 +895,35 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .activity-title {
     font-weight: bold;
-    margin-top: 10px;
-    font-size: 1.25rem;
+    margin: 10px 0;
+    font-size: 16px;
 }
 
 .activity-description {
-    color: #555;
+    color: #636a82;
 }
 
-/* modal */
+/*-------------------------------------
+        Interests
+--------------------------------------*/
+.interests-area {
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+.interests-area .carousel-inner .item img {
+    width: auto;
+    height: 300px;
+}
+
+.carousel-caption {
+    top: 0;
+}
+
+/*-------------------------------------
+        Modal
+--------------------------------------*/
 .modal {
     padding-top: 100px;
 }
@@ -914,7 +939,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     width: auto;
 }
 
-/* scroll top */
+/*-------------------------------------
+        Scroll Top
+--------------------------------------*/
 #scroll-Top  .return-to-top {
     position: fixed;
     right: 30px;
