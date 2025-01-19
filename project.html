@@ -11,6 +11,7 @@
 		
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Russo+One&display=swap" rel="stylesheet">
 
         <!--font-awesome.min.css-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
@@ -42,20 +43,20 @@
     <body>
         <div id="navbar-placeholder"></div>
 
-        <section id="welcome-sub" class="welcome-sub-no-overlay">
+        <section id="welcome-sub" class="welcome-sub">
             <div class="image-background">
-                <img src="assets/images/background/project.png" alt="Background Image">
+                <img src="assets/images/background/project.jpg" alt="Background Image">
             </div>
-			<!-- <div class="container">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2>ShowCase</h2>
+							<h2>Projects</h2>
 							<p>A brief overview of the projects I have developed</p>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 		</section>
 
@@ -71,56 +72,305 @@
 							<div class="row">
 
 								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/unitycare.jpg" alt="portfolio image"/>
+									<div class="item" data-toggle="modal" data-target="#unitycaremodal">
+										<img src="assets/images/portfolio/unitycare.png" alt="portfolio image"/>
 										<div class="isotope-overlay">
-											<a href="#">
+											<a>
 												UNITYCARE
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
+										</div>
+									</div>
+									<div class="item" data-toggle="modal" data-target="#animodal">
 										<img src="assets/images/portfolio/animation.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
-											<a href="#">
+											<a>
 												covid-19 animation
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
+										</div>
+									</div>
 								</div><!-- /.col -->
 
 								<div class="col-sm-4">
-									<div class="item">
+									<div class="item" data-toggle="modal" data-target="#nnmodal">
 										<img src="assets/images/portfolio/nutrient-navigator.png" alt="portfolio image"/>
 										<div class="isotope-overlay">
-											<a href="#">
+											<a>
 												nutrient navigator
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
+										</div>
+									</div>
 								</div><!-- /.col -->
 
 								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/prim.jpg" alt="portfolio image"/>
+									<div class="item" data-toggle="modal" data-target="#primmodal">
+										<img src="assets/images/portfolio/prim.png" alt="portfolio image"/>
 										<div class="isotope-overlay">
-											<a href="#">
+											<a>
 												hostel management system
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
-										<img src="assets/images/portfolio/ims.jpg" alt="portfolio image"/>
+										</div>
+									</div>
+									<div class="item" data-toggle="modal" data-target="#imsmodal">
+										<img src="assets/images/portfolio/ims.png" alt="portfolio image"/>
 										<div class="isotope-overlay">
-											<a href="#">
+											<a>
 												inventory management system
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- unity care modal -->
+					<div id="unitycaremodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="unitycaremodalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							  <h4 class="modal-title" id="unitycaremodalLabel">Project Description</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									UnityCare serves as a bridge to connect the enterprise and individual who have financial difficulties or 
+									physical disabilities.
+								</p>
+								<br/>
+								<p><strong>General Benefits</strong></p>
+								<p>- Fostering a culture of empathy and collective responsibility</p>
+								<p>- Raising awareness about the poverty issue</p>
+								<br/>
+								<p><strong>Individuals with Disability Benefits</strong></p>
+								<p>- Find available jobs</p>
+								<p>- Attend skill development programs</p>
+								<p>- May receive government subsidies</p>
+								<br/>
+								<p><strong>Enterprise Benefits</strong></p>
+								<p>- Caring for vulnerable groups</p>
+								<p>- Improve their corporate reputation</p>
+								<p>- May receive government subsidies</p>
+								<br/>
+								<p><strong>Volunteer Benefits</strong></p>
+								<p>- Gain knowledge to deal with people with physical disabilities</p>
+								<br/>
+								<div class="modal-flex">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/ab_lJo7JxxQ?si=viNagOYFU7eppycS" 
+									title="YouTube video player" frameborder="0" 
+									allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<!-- animation modal -->
+					<div id="animodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="animodalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							  <h4 class="modal-title" id="animodalLabel">Project Description</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									An animation video delivering way to avoid coronavirus infection.
+								</p>
+								<br/>
+								<p><strong>Benefits</strong></p>
+								<p>- Raising awareness about personal healthcare.</p>
+								<p>- Fosters long-term healthy habits in the community.</p>
+								<br/>
+								<div class="modal-flex">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/TMUZxTA4l3M?si=g8Y3BZmnWLHFA5N-" 
+									title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; 
+									encrypted-media; gyroscope; picture-in-picture; web-share" 
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<!-- nutrient navigator modal -->
+					<div id="nnmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="nnmodalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							  <h4 class="modal-title" id="nnmodalLabel">Project Description</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									The Nutrient Navigator project provides an engaging, hands-on learning approach by using 
+									technology to identify and classify key nutrients in foods. <br/>Students will build a 
+									conveyor belt model, integrate a micro:bit system, and use a camera to detect food 
+									items and display their main nutrient. <br/>This interactive experience allows students 
+									to apply tech skills in a real-world context, deepening their understanding of food's 
+									nutritional value and how technology can aid in everyday life. 
+								</p>
+								<br/>
+								<p><strong>Benefits</strong></p>
+								<p>- Students gain nutrition knowledge they can share with family and friends.</p>
+								<p>- Early nutrition education fosters long-term healthy habits in the community.</p>
+								<p>- The project encourages using tech in practical, everyday contexts.</p>
+								<br/>
+								<div class="modal-flex">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/VMe05LKm6JE?si=QqXiNEtxEgnszOmL" 
+									title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; 
+									encrypted-media; gyroscope; picture-in-picture; web-share" 
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<!-- prim modal -->
+					<div id="primmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="primmodalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							  <h4 class="modal-title" id="primmodalLabel">Project Description</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									This platform helps schools efficiently manage student check-ins and check-outs from the dormitory, 
+									ensuring smooth and secure operations. It provides real-time tracking, automated notifications, 
+									and easy reporting for school administrators.
+								</p>
+								<br/>
+								<p><strong>Benefits</strong></p>
+								<p>- Track student movements to ensure safety and accountability.</p>
+								<p>- Notify parents and guardians of student arrivals and departures.</p>
+								<p>- Generate detailed reports on dormitory occupancy and student activity for better management.</p>
+								<br/>
+								<div class="modal-flex">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/6fRI22w4jLM?si=QntRT5wcUodXNN0A" 
+									title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; 
+									encrypted-media; gyroscope; picture-in-picture; web-share" 
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<!-- ims modal -->
+					<div id="imsmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imsmodalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							  <h4 class="modal-title" id="imsmodalLabel">Project Description</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									A system that is mainly used to handle the inventory management process and 
+									automate report generation.
+								</p>
+								<br/>
+								<p><strong>Benefits</strong></p>
+								<p>- Reduce the probability of data loss.</p>
+								<p>- Increase data accuracy.</p>
+								<p>- Increase the efficiency of the employees.</p>
+								<br/>
+								<div class="modal-flex">
+									<div class="container-fluid">
+										<!-- Carousel container -->
+										<div id="my-pics" class="carousel slide" data-ride="carousel">
+										
+											<!-- Indicators -->
+											<ol class="carousel-indicators">
+												<li data-target="#my-pics" data-slide-to="0" class="active"></li>
+												<li data-target="#my-pics" data-slide-to="1"></li>
+												<li data-target="#my-pics" data-slide-to="2"></li>
+												<li data-target="#my-pics" data-slide-to="3"></li>
+												<li data-target="#my-pics" data-slide-to="4"></li>
+												<li data-target="#my-pics" data-slide-to="5"></li>
+												<li data-target="#my-pics" data-slide-to="6"></li>
+												<li data-target="#my-pics" data-slide-to="7"></li>
+												<li data-target="#my-pics" data-slide-to="8"></li>
+											</ol>
+											
+											<!-- Content -->
+											<div class="carousel-inner" role="listbox">
+											
+												<!-- Slide 1 -->
+												<div class="item active">
+													<img src="assets/images/portfolio/ims/IMS-1.png" alt="IMS image">
+												</div>
+												
+												<!-- Slide 2 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-2.png" alt="IMS image">
+												</div>
+												
+												<!-- Slide 3 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-3.png" alt="IMS image">
+												</div>
+						
+												<!-- Slide 4 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-4.png" alt="IMS image">
+												</div>
+						
+												<!-- Slide 5 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-5.png" alt="IMS image">
+												</div>
+												<!-- Slide 6 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-6.png" alt="IMS image">
+												</div>
+												<!-- Slide 7 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-7.png" alt="IMS image">
+												</div>
+												<!-- Slide 8 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-8.png" alt="IMS image">
+												</div>
+												<!-- Slide 9 -->
+												<div class="item">
+													<img src="assets/images/portfolio/ims/IMS-9.png" alt="IMS image">
+												</div>
+											</div>	
+											<!-- Previous/Next controls -->
+											<a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+												<span class="icon-prev" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+												<span class="icon-next" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					</div>
+
 				</div><!--/.container-->
 			</div><!--/.portfolio-details-->
 

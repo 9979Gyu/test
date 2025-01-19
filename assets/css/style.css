@@ -11,6 +11,12 @@
 	box-sizing:border-box;
 }
 
+.black-ops-one-regular {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .even-background {
     z-index: 0;
     background: #f9fbfd;
@@ -844,7 +850,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     position:absolute;
     height:100%;
     width:100%;
-    background:rgba(31,44,108,.5);
+    background:rgba(31,44,108,0.8);
     display:flex;
     align-items:center;
     text-transform: uppercase;
@@ -988,5 +994,23 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 @keyframes example {
     0%   {bottom:0px;}
     100%  {bottom:7px;}
+}
+
+.modal .carousel-indicators li{
+    border: none;
+    background-color: rgb(99, 98, 104);
+}
+
+.modal .carousel-indicators .active{
+    border: none;
+    background-color: rgb(203, 203, 206);
+}
+
+.modal .carousel-control .left{
+    background-color: white;
+}
+
+.modal .carousel {
+    background-color: transparent;
 }
 
